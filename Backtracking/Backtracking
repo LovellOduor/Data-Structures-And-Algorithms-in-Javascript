@@ -1,0 +1,5 @@
+3 Keys of backtracking
+ - choices
+ - constraints 
+ - goals
+State-space tree - A tree of all possble solutions common in backtracking problems.
