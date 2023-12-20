@@ -1,11 +1,14 @@
 class MaxPriorityQueue{
+
     heap = [-1];
     length = 0;
+
     insert(k){
         this.heap.push(k);
         this.length+=1;
         this.#swim(this.length);
     }
+
     #swap(x,y){
         const temp = this.heap[x];
         this.heap[x] = this.heap[y];
@@ -43,6 +46,7 @@ class MaxPriorityQueue{
             parentIndex = Math.trunc(index/2);
         }
     }
+
     isEmpty(){
         return this.length==0;
     }
@@ -50,13 +54,17 @@ class MaxPriorityQueue{
     size(){
         return this.length;
     }
+
 }
 
 const maxPQ = new MaxPriorityQueue();
+
 maxPQ.insert(1);
 maxPQ.insert(2);
 maxPQ.insert(3);
+maxPQ.insert(4);
+maxPQ.insert(5);
+maxPQ.insert(6);
+maxPQ.insert(7);
 
-console.log(maxPQ.heap);
-maxPQ.deleteMax();
 console.log(maxPQ.heap);
