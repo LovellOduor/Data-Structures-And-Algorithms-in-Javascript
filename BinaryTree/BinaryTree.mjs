@@ -60,13 +60,55 @@ class BinaryTree{
             }
         }
     }
+
+    printLevelByLevel(root,level,result){
+        if(level > result.length){
+            result.push([]);
+        }
+        if(root){
+            result[level-1].push(root.data);
+        }else{
+            result[level-1].push(null);
+            return result;
+        }
+        this.printLevelByLevel(root.left,level+1,result);
+        this.printLevelByLevel(root.right,level+1,result);
+        return result;
+    }
+
+    isValid(root,min,max){
+        if(!root)return true;
+
+        if(root.data < min || root.data > max) return false;
+        
+        if(!root.left){
+        }else if(root.data < root.left.data){
+            return false;
+        }
+
+        if(!root.right){
+        }else if(root.data > root.right.data){
+            return false;
+        } 
+        
+        const leftValid = this.isValid(root.left,min,root.data);
+        const rightValid = this.isValid(root.right,root.data,max);
+
+        return (leftValid && rightValid);
+    }
+
+
 }
 
 const bt = new BinaryTree();
-bt.root = new TreeNode(1);
-bt.root.left = new TreeNode(2);
+bt.root = new TreeNode(10);
+bt.root.left = new TreeNode(5);
 bt.root.left.left = new TreeNode(4);
-bt.root.left.right = new TreeNode(5);
-bt.root.right = new TreeNode(3);
+bt.root.left.right = new TreeNode(6);
+bt.root.right = new TreeNode(12);
+bt.root.right.left = new TreeNode(11);
+bt.root.right.right = new TreeNode(13);
 
-bt.iterativePostOrder();
+const result = bt.isValid(bt.root,Number.MIN_SAFE_INTEGER,Number.MAX_SAFE_INTEGER);
+
+console.log(result);
