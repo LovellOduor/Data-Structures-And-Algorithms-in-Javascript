@@ -1,8 +1,8 @@
-
 function nextGreaterElement(arr){
     const result = [];
     const stack = [];
     for(let i = arr.length-1; i >=0; i--){
+        
         while(arr[i]>stack[stack.length-1] && stack.length>0){
             stack.pop();
         }
