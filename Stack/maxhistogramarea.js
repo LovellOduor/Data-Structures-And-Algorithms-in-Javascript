@@ -27,11 +27,9 @@ function maxHistogramArea(heights){
     for(let o of stack){
         maxArea = Math.max(maxArea,(o.height*(heights.length-o.index)));
     }
-
     return maxArea;
 
 }
-
 
 const heights = [2,1,5,6,2,3];
 let ans = maxHistogramArea(heights);
