@@ -28,6 +28,6 @@ class BubbleSort{
 }
 
 const bubbleSort = new BubbleSort();
-const arr = [5,4,3,2,1];
+const arr = [2,1,5,4,3];
 bubbleSort.sort(arr);
 console.log(arr);

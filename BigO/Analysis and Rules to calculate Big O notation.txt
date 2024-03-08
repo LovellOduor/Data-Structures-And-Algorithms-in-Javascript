@@ -1,0 +1,12 @@
+Assumptions
+- Single processor
+- Algorithms are running sequentially
+Rules
+- Assignment operation takes 1 unit of time
+- Return statement takes in 1 unit of time
+- Arithmetic operations take 1 unit of time
+- Logical operation takes 1 unit of time
+- Other small/single operations take one unit of time
+- Drop lower order terms
+- Drop constant multipliers
+- Accessing a variable

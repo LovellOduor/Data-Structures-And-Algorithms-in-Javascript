@@ -1,0 +1,3 @@
+Space Complexity
+- The amount of memory taken by an algortithm to run.
+- The memory required to process the input by an algorithm is called space complexity.

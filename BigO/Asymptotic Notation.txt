@@ -1,0 +1,6 @@
+Asymptotic Notation
+- These are mathematical tools used to describe the running time of an algorithm in-terms of input size.
+- Asymptotic analysis helps in determining
+1. Best case.
+2. Average case.
+3. Worst case.

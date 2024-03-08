@@ -1,0 +1,4 @@
+Asymptotic Analysis
+- Asymptotic analysis helps in evaluating performance of an algortihm in terms of input size and it's increase.
+- Asymptotic analysis doesn't actually measure running time of an algorithm. 
+- It helps in determining how time and space taken by an algorithm increases with input size.

@@ -1,0 +1,8 @@
+Introduction to Data Structures | Data Structures and Algorithms in Java
+A data structure is a way to organise data.
+Type of data structures
+- Linear : Store elements sequentially. e.g Linked list, Array, Stack, Queue
+- Non-linear: Data are not stored in sequence, usually in multiple levels e.g Tree and Graph.
+
+Algorithm
+- A set of instrusctions used to perform a given task.
