@@ -1,0 +1,31 @@
+Log N Runtimes 
+
+We start off with an N-element array to search. Then, after a single step, we're down to "/i elements. One 
+more step, and we're down to
+ H/t, elements. We stop when we either find the value or we're down to just 
+one element. 
+The total runtime is then a matter of how many steps (dividing N by 2 each time) we can take until N 
+becomes 1.     
+    N = 16 
+    N = 8 /* divide by 2 */ 
+    M = 4 /* divide by 2 */ 
+    N = 2 /* divide by 2 V 
+    N = 1 /* divide by 2 V 
+We could look at this in reverse (going from 1 to 16 instead of 16 to 1). How many times we can multiply 1 
+by 2 until we get N? 
+    N = 1 
+    N = 2 /* multiply by 2 */ 
+    N = 4 /* multiply by 2 */ 
+    N = 8 !* multiply by 2 */ 
+    N = 16 /* multiply by 2 */ 
+What is k in the expression 2k
+ = N? This is exactly what lo g expresses. 
+T - 16 -> log;
+16 = 4 
+log;
+N = k -> 2* = N 
+This is a good takeaway for you to have. When you see a problem where the number of elements in the 
+problem space gets halved each time, that will likely be a 0( lo g N) runtime. 
+
+
+
